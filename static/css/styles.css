@@ -7901,10 +7901,10 @@ textarea.form-control-lg {
 }
 
 .int-box:hover {
-  width: 550px;
+  width: 50%;
   height: 370px;
 }
-
+ 
 .container1-standard{
   position: absolute;
   left: 275px;
