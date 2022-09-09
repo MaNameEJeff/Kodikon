@@ -7882,7 +7882,6 @@ textarea.form-control-lg {
   width: 45%;
   height: 300px;
   background-color: white;
-  margin: 15px;
   box-sizing: border-box;
   overflow: hidden;
   border-radius: 10px;
@@ -7904,23 +7903,21 @@ textarea.form-control-lg {
  
 .container1-standard{
   position: absolute;
-  /* position: relative;
-  height: 50%;
-  width: 100%; */
-  left: 275px;
-  height: 120px;
-  width: 1400px;
-  top: 580px;
+  left: 15.78%;
+  height: 13%;
+  top: 62%;
+  width: 75%;
   margin: 5px auto;
   /* background: red; */
 }
 
 .container2-standard {
   position: absolute;
-  left: 275px;
-  height: 120px;
-  width: 1400px;
-  margin: 700px auto;
+  left: 15.78%;
+  top: 80%;
+  width: 75%;
+  height: 13%;
+  margin: 5px auto;
   /* background: blue; */
 }
 
@@ -7931,8 +7928,8 @@ textarea.form-control-lg {
   border-radius: 10px;
   transition: 0.5s;
   position: relative;
-  width: 170px;
-  height: 100px;
+  width: 13%;
+  height: 100%;
   background-color: white;
   margin: 10px auto;
   margin-left: 80px;
