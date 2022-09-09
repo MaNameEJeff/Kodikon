@@ -7902,33 +7902,32 @@ textarea.form-control-lg {
 }
  
 .container1-standard{
-  position: absolute;
+  position: relative;
   left: 15.78%;
   height: 13%;
-  top: 62%;
+  top: 10%;
   width: 75%;
   /* background: red; */
 }
 
 .container2-standard {
-  position: absolute;
+  position: relative;
   left: 15.78%;
-  top: 80%;
-  width: 75%;
   height: 13%;
-  margin: 5px auto;
+  top: 10%;
+  width: 75%;
   /* background: blue; */
 }
 
 .container1-standard .box-std , .container2-standard .box-std {
+  position: relative;
+  width: 13%;
+  height: 100%;
   border-style: solid;
   border-width: 2px;
   float: left;
   border-radius: 10px;
   transition: 0.5s;
-  position: relative;
-  width: 13%;
-  height: 100%;
   background-color: white;
   margin: 10px auto;
   margin-left: 80px;
