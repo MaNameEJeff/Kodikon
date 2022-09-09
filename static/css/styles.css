@@ -7861,13 +7861,83 @@ textarea.form-control-lg {
 }
 
 .bg-gradient {
+  
   background-image: var(--bs-gradient) !important;
 }
 
-.bg-custom{
-  --bs-bg-opacity: 1;
-  background-color: rgba(0, 0, 0, 0.15);
+/*GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG*/
+
+.container-interactive{
+  position: relative;
+  left: 90px;
+  height: 300px;
+  width: 1350px;
+  margin: 150px auto;
+  /* background: red; */
 }
+
+.container-interactive .box-math,.box-eng{
+  border-style: solid;
+  border-color: 1px black;
+  position: relative;
+  width: 500px;
+  height: 320px;
+  background-color: white;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.container-interactive .box-math {
+  float: left;
+  border-color: 1px yellow;
+}
+
+.container-interactive .box-eng {
+  float: right;
+}
+
+.int-box:hover {
+  width: 550px;
+  height: 370px;
+}
+
+.container1-standard{
+  position: absolute;
+  left: 275px;
+  height: 120px;
+  width: 1400px;
+  margin: 580px auto;
+  /* background: red; */
+}
+
+.container2-standard{
+  position: absolute;
+  left: 275px;
+  height: 120px;
+  width: 1400px;
+  margin: 700px auto;
+  /* background: blue; */
+}
+
+
+.container1-standard .box-std , .container2-standard .box-std {
+  border-style: solid;
+  border-width: 2px;
+  float: left;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  width: 170px;
+  height: 100px;
+  background-color: white;
+  margin: 10px auto;
+  margin-left: 80px;
+}
+
 
 .user-select-all {
   -webkit-user-select: all !important;
@@ -11475,7 +11545,7 @@ body {
 }
 
 .sb-sidenav-light {
-  background-color: #f8f9fa;
+  background-color: #ececec;
   color: #212529;
 }
 .sb-sidenav-light .sb-sidenav-menu .sb-sidenav-menu-heading {

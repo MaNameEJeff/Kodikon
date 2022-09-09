@@ -44,12 +44,16 @@ a {
 	font-family: Poppins-Regular;
 	font-size: 14px;
 	line-height: 1.7;
-	color: #666666;
+	color: #503333;
 	margin: 0px;
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
+}
+
+.gg{
+  color: #ebdddd;
 }
 
 a:focus {
@@ -442,7 +446,7 @@ iframe {
   font-family: FontAwesome;
   display: block;
   position: absolute;
-  color: #c02626;
+  color: #c80000;
   font-size: 15px;
   top: 50%;
   -webkit-transform: translateY(-50%);
