@@ -7902,7 +7902,7 @@ textarea.form-control-lg {
 }
  
 .container1-standard{
-  position: absolute;
+  position: relative;
   left: 15.78%;
   height: 13%;
   top: 62%;
@@ -7911,12 +7911,11 @@ textarea.form-control-lg {
 }
 
 .container2-standard {
-  position: absolute;
+  position: relative;
   left: 15.78%;
   top: 80%;
   width: 75%;
   height: 13%;
-  margin: 5px auto;
   /* background: blue; */
 }
 
