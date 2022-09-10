@@ -7867,18 +7867,11 @@ textarea.form-control-lg {
 
 /*GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG*/
 
-.container-interactive-nonav{
-  margin-left: 10%;
-}
-
-.container-interactive-wnav{
-  margin-left: 250px;
-}
-
 .container-interactive{
   position: relative;
   height: 38%;
   width: 70.3125%;
+  margin-left: 19%;
   margin-top: 8%;
 }
 
@@ -7893,30 +7886,16 @@ textarea.form-control-lg {
   overflow: hidden;
   border-radius: 10px;
   transition: 0.5s;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .container-interactive .box-math {
   float: left;
-}
-
-@keyframes boxEnlarge {
-  from {
-    background-color: red;
-  }
-  to{
-    background-color: blue;
-  }
-}
-
-.box-math-enlarge{
-  z-index: 100;
-  animation-name: boxEnlarge;
-  animation-duration: 4s;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .container-interactive .box-eng {
   float: right;
+  box-shadow:0px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .box-std:hover, .int-box:hover{
@@ -7934,26 +7913,35 @@ textarea.form-control-lg {
 
 .container2-standard {
   position: relative;
-  left: 15.79%;
+  left: 15.78%;
+  height: 13%;
   top: 10%;
   width: 75%;
-  height: 13%;
   /* background: blue; */
 }
 
 .container1-standard .box-std , .container2-standard .box-std {
+  position: relative;
+  width: 13%;
+  height: 100%;
   border-style: solid;
   border-width: 2px;
   float: left;
   border-radius: 10px;
   transition: 0.5s;
-  position: relative;
-  width: 13%;
-  height: 100%;
   background-color: white;
   margin: 10px auto;
   margin-left: 80px;
 }
+
+.triangle{
+  position: relative;
+  border-bottom: 20px solid greenyellow;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  opacity: 1;
+}
+
 
 
 .user-select-all {
