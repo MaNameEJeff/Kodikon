@@ -19,8 +19,19 @@ window.addEventListener('DOMContentLoaded', event => {
         sidebarToggle.addEventListener('click', event => {
             event.preventDefault();
             document.body.classList.toggle('sb-sidenav-toggled');
+            clsss = document.getElementsByClassName('container-interactive')[0].classList
+            clsss.toggle('container-interactive-nonav');
+            clsss.toggle('container-interactive-wnav');
             localStorage.setItem('sb|sidebar-toggle', document.body.classList.contains('sb-sidenav-toggled'));
         });
     }
 
 });
+
+
+document.getElementsByClassName("box-math")[0].addEventListener("click", function (){
+    element = document.getElementsByClassName("box-math")[0]
+    element.classList.add("box-math-enlarge");
+    var rect = element.getBoundingClientRect();
+    console.log(rect.top, rect.right, rect.bottom, rect.left);
+})
