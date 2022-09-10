@@ -7867,6 +7867,14 @@ textarea.form-control-lg {
 
 /*GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG*/
 
+.container-interactive-nonav{
+  margin-left: 10%;
+}
+
+.container-interactive-wnav{
+  margin-left: 250px;
+}
+
 .container-interactive{
   position: relative;
   height: 38%;
@@ -7891,6 +7899,21 @@ textarea.form-control-lg {
 .container-interactive .box-math {
   float: left;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes boxEnlarge {
+  from {
+    background-color: red;
+  }
+  to{
+    background-color: blue;
+  }
+}
+
+.box-math-enlarge{
+  z-index: 100;
+  animation-name: boxEnlarge;
+  animation-duration: 4s;
 }
 
 .container-interactive .box-eng {

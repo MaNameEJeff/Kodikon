@@ -34,4 +34,5 @@ document.getElementsByClassName("box-math")[0].addEventListener("click", functio
     element.classList.add("box-math-enlarge");
     var rect = element.getBoundingClientRect();
     console.log(rect.top, rect.right, rect.bottom, rect.left);
+    console.log(screen.width, screen.height);
 })
