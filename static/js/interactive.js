@@ -8,7 +8,7 @@ async function fooo(){
     NextQuestion(0);
 }
 
-var total_qs = Math.min(4,questions.length);
+var total_qs = 4;
 let shuffledQuestions = [] //empty array to hold shuffled selected questions
 
 function handleQuestions() { 
