@@ -1,54 +1,60 @@
-const questions = [
-    {
-        question: "How many circles do you see",
-        optionA: "3",
-        optionB: "2",
-        optionC: "5",
-        optionD: "9",
-        correctOption: "optionA"
-    },
-    {
-        question: "Which shape in the animation is coloured in green",
-        optionA: "circle",
-        optionB: "square",
-        optionC: "triangle",
-        optionD: "rectangle",
-        correctOption: "optionC"
-    },
-    {
-        question: "Which is the smallest animal from the picture",
-        optionA: "Elephant",
-        optionB: "Mouse",
-        optionC: "Rabbit",
-        optionD: "Horse",
-        correctOption: "optionB"
-    },
-    {
-        question: "Which is the biggest fruit in the picture",
-        optionA: "Watermelon",
-        optionB: "Mango",
-        optionC: "Apple",
-        optionD: "Banana",
-        correctOption: "optionA"
-    },
-    {
-        question: "Select the square from the group",
-        optionA: "1",
-        optionB: "2",
-        optionC: "3",
-        optionD: "4",
-        correctOption: "optionB"
-    },
-    
+// const questions = [
+//     {
+//         question: "How many circles do you see",
+//         optionA: "3",
+//         optionB: "2",
+//         optionC: "5",
+//         optionD: "9",
+//         correctOption: "optionA"
+//     },
+//     {
+//         question: "Which shape in the animation is coloured in green",
+//         optionA: "circle",
+//         optionB: "square",
+//         optionC: "triangle",
+//         optionD: "rectangle",
+//         correctOption: "optionC"
+//     },
+//     {
+//         question: "Which is the smallest animal from the picture",
+//         optionA: "Elephant",
+//         optionB: "Mouse",
+//         optionC: "Rabbit",
+//         optionD: "Horse",
+//         correctOption: "optionB"
+//     },
+//     {
+//         question: "Which is the biggest fruit in the picture",
+//         optionA: "Watermelon",
+//         optionB: "Mango",
+//         optionC: "Apple",
+//         optionD: "Banana",
+//         correctOption: "optionA"
+//     },
+//     {
+//         question: "Select the square from the group",
+//         optionA: "1",
+//         optionB: "2",
+//         optionC: "3",
+//         optionD: "4",
+//         correctOption: "optionB"
+//     },
+// ]
 
-]
+var questions_json;
+fetch('../static/js/questions.json').then((response) => response.json()).then((json) => {questions_json = json;});
+var questions = []
+setTimeout(() => {
+    for(const i in questions_json) questions.push(questions_json[i]);
+    console.log(questions);
+},5000);
 
-
+var total_qs = 4;
 let shuffledQuestions = [] //empty array to hold shuffled selected questions
 
 function handleQuestions() { 
     //function to shuffle and push 10 questions to shuffledQuestions array
-    while (shuffledQuestions.length <= 4) {
+    while (shuffledQuestions.length <= total_qs) {
         const random = questions[Math.floor(Math.random() * questions.length)]
         if (!shuffledQuestions.includes(random)) {
             shuffledQuestions.push(random)
@@ -127,7 +133,7 @@ function handleNextQuestion() {
     unCheckRadioButtons()
     //delays next question displaying for a second
     setTimeout(() => {
-        if (indexNumber <= 4) {
+        if (indexNumber <= total_qs) {
             NextQuestion(indexNumber)
         }
         else {
