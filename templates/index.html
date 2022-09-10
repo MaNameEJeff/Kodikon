@@ -13,15 +13,26 @@
         <style>
             .gradient-color{
                 /* background: linear-gradient(-135deg, #18b6cb, #fbf704, #fb7704); */
-                
-                background-color: #ececec;
+                background: radial-gradient(800px,white, #a7a5a5);
+                /* background-color: #ececec; */
+            }
+            .nav-color{
+                background: #154b63 ;
+                background-color: #0c739f;
+                background: linear-gradient(180deg, #2aad46, #0c739f);
+                /* background-color: white; */
+            }
+            .top-color{
+                background-color: #2aad46;
+                /* background-color: rgb(43, 164, 13); */
+                /* background: linear-gradient(0deg,#2aad46,#0c739f ); */
             }
         </style>
     </head>
-    <body class="sb-nav-fixed">
-        <nav class="sb-topnav navbar navbar-expand navbar-dark gradient-color">
+    <body class="sb-nav-fixed gradient-color">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark top-color" >
             <!-- Sidebar Toggle-->
-            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars" ></i></button>
             <!-- Navbar Brand-->
             <a class="navbar-brand ps-3" href="reach" style="color: black;">Reach</a>
             <!-- Navbar Search-->
@@ -44,7 +55,7 @@
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
                 <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
-                    <div class="sb-sidenav-menu">
+                    <div class="sb-sidenav-menu nav-color">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
                             <a class="nav-link" href="reach">
@@ -98,7 +109,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sb-sidenav-footer">
+                    <div class="sb-sidenav-footer" style="background-color: ;">
                         <div class="small">Logged in as:</div>
                         Admin
                     </div>

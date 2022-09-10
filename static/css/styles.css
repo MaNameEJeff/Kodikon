@@ -7869,7 +7869,9 @@ textarea.form-control-lg {
 /*GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG*/
 
 
+
 .Math-Label-Dashboard,.Eng-Label-Dashboard{
+  color: black;
   font-size: 500%;
   text-align: center ;
   font-family: 'Pastilaris';
@@ -7900,7 +7902,6 @@ textarea.form-control-lg {
   position: relative;
   width: 45%;
   height: 100%;
-  background-color: white;
   box-sizing: border-box;
   overflow: hidden;
   border-radius: 10px;
@@ -7908,6 +7909,7 @@ textarea.form-control-lg {
 }
 
 .container-interactive .box-math {
+
   float: left;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
   margin-left: var(--math-eng);
@@ -7977,6 +7979,7 @@ textarea.form-control-lg {
   border-radius: 5px;
 }
 .box-eng:hover:after{
+  color: white;
   content: '';
   position: absolute;
   top:calc(-1*10px);
@@ -7986,8 +7989,27 @@ textarea.form-control-lg {
   background: linear-gradient(60deg, #f79533, #f37055, #ef437b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
   border-radius: calc(2 * 10px);
   z-index: -1;
-  animation: border_animate 3s ease alternate infinite;
+  animation: border_animate 3s ease normal ;
+  /* animation: animate 10s linear infi; */
   background-size: 300% 300%;
+}
+.box-math:hover h2, .box-eng:hover h2{
+  color: white;
+}
+
+@keyframes border_animate {
+  0%{
+    background-position: 0% 50%;
+  }
+  /* 50%{
+    background-position: 100% 50%;
+  } */
+  99%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
 }
  
 .container1-standard{
@@ -8036,13 +8058,10 @@ textarea.form-control-lg {
   height: 65.58%;
 }
 
-.shapes{
-  
-}
 
 @keyframes animate {
   0%{
-    opacity: 1;
+    opacity: 0.5;
     border-radius: 0;
     transform: translateY(0) rotate(0deg);
   }
@@ -8060,7 +8079,6 @@ textarea.form-control-lg {
   border-bottom: 20px solid greenyellow;
   border-right: 10px solid transparent;
   border-left: 10px solid transparent;
-  opacity: 1;
   width: 20px;
   height: 20px;
   bottom: -5%;
@@ -8068,27 +8086,48 @@ textarea.form-control-lg {
 }
 
 .shapes div:nth-child(1){
+  border-bottom: 20px solid red;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
   left: 50%;
   animation-delay: 2s;
 }
 .shapes div:nth-child(2){
+  border-bottom: 20px solid green;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
   left: 23%;
   animation-delay: 1s;
   
 }
 .shapes div:nth-child(3){
+  border-bottom: 20px solid yellow;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
   left: 80%;
   animation-delay: 1.5s;
 }
 .shapes div:nth-child(4){
+  border-bottom: 20px solid lightblue;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
   left: 60%;
   animation-delay: 2.5s;
-  
 }
 .shapes div:nth-child(5){
+  border-bottom: 20px solid #bb2d3b;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  left: 2%;
+  animation-delay: 1.1s;
   
 }
 .shapes div:nth-child(6){
+  border-bottom: 20px solid #084298;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  left: 75%;
+  animation-delay: 2.6s;
   
 }
 .shapes div:nth-child(7){
