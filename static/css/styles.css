@@ -7879,6 +7879,50 @@ textarea.form-control-lg {
   padding-top: 20%;
 }
 
+.progress-main{
+  position: relative;
+  height: 38%;
+  width: 70.3125%;
+  margin-left: 19%;
+  margin-top: 5%;
+}
+
+.progress-main .chart1,.chart2{
+  /* border-width: 2px;
+  border-style: solid;
+  border-color: black; */
+  position: relative;
+  width: 48%;
+  height: 110%;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.5s;
+  align-content: bottom;
+}
+
+.progress-main .chart1 {
+  background-color: #ebebeb;
+  float: left;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  margin-left: var(--math-eng);
+}
+
+.progress-main .chart2 {
+  background-color: #ebebeb;
+  float: right;
+  box-shadow:0px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.chartjs-render-monitor{
+  position: relative;
+  top:20%;
+}
+
+.weekly-progress-label{
+  text-align: center;
+}
+
 .container-interactive-nonav{
   margin-left: 10%;
 }
@@ -7892,7 +7936,7 @@ textarea.form-control-lg {
   height: 38%;
   width: 70.3125%;
   margin-left: 19%;
-  margin-top: 8%;
+  margin-top: 5%;
 }
 
 .container-interactive .box-math,.box-eng{
@@ -8010,38 +8054,6 @@ textarea.form-control-lg {
   100%{
     background-position: 0% 50%;
   }
-}
- 
-.container1-standard{
-  position: relative;
-  left: 15.78%;
-  height: 13%;
-  top: 10%;
-  width: 75%;
-  /* background: red; */
-}
-
-.container2-standard {
-  position: relative;
-  left: 15.78%;
-  height: 13%;
-  top: 10%;
-  width: 75%;
-  /* background: blue; */
-}
-
-.container1-standard .box-std , .container2-standard .box-std {
-  position: relative;
-  width: 13%;
-  height: 100%;
-  border-style: solid;
-  border-width: 2px;
-  float: left;
-  border-radius: 10px;
-  transition: 0.5s;
-  background-color: white;
-  margin: 10px auto;
-  margin-left: 6%;
 }
 
 .triangle{
