@@ -7886,15 +7886,16 @@ textarea.form-control-lg {
   overflow: hidden;
   border-radius: 10px;
   transition: 0.5s;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .container-interactive .box-math {
   float: left;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .container-interactive .box-eng {
   float: right;
+  box-shadow:0px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .box-std:hover, .int-box:hover{
@@ -7932,6 +7933,15 @@ textarea.form-control-lg {
   margin: 10px auto;
   margin-left: 80px;
 }
+
+.triangle{
+  position: relative;
+  border-bottom: 20px solid greenyellow;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  opacity: 1;
+}
+
 
 
 .user-select-all {
