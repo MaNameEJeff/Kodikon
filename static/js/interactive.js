@@ -250,8 +250,6 @@ let indexNumber = 0
 function NextQuestion(index) {
     handleQuestions()
     const currentQuestion = shuffledQuestions[index]
-    document.getElementById("question-number").innerHTML = questionNumber
-    document.getElementById("player-score").innerHTML = playerScore
     document.getElementById("display-question").innerHTML = currentQuestion.question;
     document.getElementById("option-one-label").innerHTML = currentQuestion.optionA;
     document.getElementById("option-two-label").innerHTML = currentQuestion.optionB;
