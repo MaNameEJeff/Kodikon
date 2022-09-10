@@ -37,10 +37,15 @@ function NextQuestion(index) {
     document.getElementById("option-three-label").innerHTML = currentQuestion.optionC;
     document.getElementById("option-four-label").innerHTML = currentQuestion.optionD;
     document.getElementsByClassName("anim")[0].innerHTML = `<img src=\"${currentQuestion.image}\" width=400>`;
-
+    element = document.getElementsByClassName("modal-button-container")[0]
+    console.log(`<embed style=\"width:50%\" src="https://youtu.be/zJwbZX4i-N4"></embed>`+element.innerHTML);
+    element.innerHTML = `<embed style=\"width:50%\" src="https://youtu.be/zJwbZX4i-N4"></embed><br>`+element.innerHTML;
 }
 
 
+function hintMe(){
+    document.getElementById('option-modal').style.display = "flex"
+}
 function checkForAnswer() {
     const currentQuestion = shuffledQuestions[indexNumber] //gets current Question 
     const currentQuestionAnswer = currentQuestion.correctOption //gets current Question's answer
@@ -55,9 +60,9 @@ function checkForAnswer() {
     })
    
     //checking to make sure a radio input has been checked or an option being chosen
-    if (options[0].checked === false && options[1].checked === false && options[2].checked === false && options[3].checked == false) {
-        document.getElementById('option-modal').style.display = "flex"
-    }
+    // if (options[0].checked === false && options[1].checked === false && options[2].checked === false && options[3].checked == false) {
+    //     document.getElementById('option-modal').style.display = "flex"
+    // }
 
     //checking if checked radio button is same as answer
     options.forEach((option) => {
