@@ -16,7 +16,7 @@ def math():
 	data = data_base.db.child("Class1").child("Math").child("Chapter 1").get().val()
 	data_dict = {}
 	for d in data:
-		data_dict[data.index(d)] = d;
+		data_dict[data.index(d)] = d
 	json_object = json.dumps(data_dict, indent=4)
 	with open("./static/js/questions.json", "w") as file:
 		file.write(json_object)

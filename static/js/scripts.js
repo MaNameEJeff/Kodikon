@@ -56,9 +56,9 @@ for(let i=0;i<elems.length;i++){
         
         setTimeout(()=>{
             if (element.classList.contains("box-math"))
-                open("../../templates/interactive_math.html","_self");
+                location.href = "math";
             else
-                open("../../templates/interactive_eng.html","_self");
+                location.href = "eng";
         },800);
     });
 }
