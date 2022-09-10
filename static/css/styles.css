@@ -7868,6 +7868,15 @@ textarea.form-control-lg {
 
 /*GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG*/
 
+
+.Math-Label-Dashboard,.Eng-Label-Dashboard{
+  font-size: 500%;
+  text-align: center ;
+  font-family: 'Pastilaris';
+  font-weight: 500;
+  padding-top: 20%;
+}
+
 .container-interactive-nonav{
   margin-left: 10%;
 }
@@ -7885,8 +7894,9 @@ textarea.form-control-lg {
 }
 
 .container-interactive .box-math,.box-eng{
+  border-width: 5px;
   border-style: solid;
-  border-color: 1px black;
+  border-color: black;
   position: relative;
   width: 45%;
   height: 100%;
@@ -7937,6 +7947,47 @@ textarea.form-control-lg {
 
 .box-std:hover, .int-box:hover{
   scale: 110%;
+}
+
+.box-math:hover{
+  color: white;
+  border-width: 5px;
+  background: #1d1f20;
+  position: relative;
+  border-radius: 5px;
+}
+.box-math:hover:after{
+  content: '';
+  position: absolute;
+  top:calc(-1*10px);
+  left:calc(-1 * 10px);
+  height: calc(100% + 10px *2);
+  width: calc(100% + 10px * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef437b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * 10px);
+  z-index: -1;
+  animation: border_animate 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+.box-eng:hover{
+  color: white;
+  border-width: 5px;
+  background: #1d1f20;
+  position: relative;
+  border-radius: 5px;
+}
+.box-eng:hover:after{
+  content: '';
+  position: absolute;
+  top:calc(-1*10px);
+  left:calc(-1 * 10px);
+  height: calc(100% + 10px *2);
+  width: calc(100% + 10px * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef437b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * 10px);
+  z-index: -1;
+  animation: border_animate 3s ease alternate infinite;
+  background-size: 300% 300%;
 }
  
 .container1-standard{
@@ -8004,6 +8055,7 @@ textarea.form-control-lg {
 
 .shapes div{
   position: absolute;
+  left:5%;
   display: block;
   border-bottom: 20px solid greenyellow;
   border-right: 10px solid transparent;
@@ -8011,21 +8063,26 @@ textarea.form-control-lg {
   opacity: 1;
   width: 20px;
   height: 20px;
-  bottom: 0;
-  animation: animate 25s linear infinite;
+  bottom: -5%;
+  animation: animate 10s linear infinite;
 }
 
 .shapes div:nth-child(1){
-  left: 5%;
-  animation-delay: 1s;
+  left: 50%;
+  animation-delay: 2s;
 }
 .shapes div:nth-child(2){
+  left: 23%;
+  animation-delay: 1s;
   
 }
 .shapes div:nth-child(3){
-  
+  left: 80%;
+  animation-delay: 1.5s;
 }
 .shapes div:nth-child(4){
+  left: 60%;
+  animation-delay: 2.5s;
   
 }
 .shapes div:nth-child(5){
