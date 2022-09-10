@@ -28,19 +28,35 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-
-document.getElementsByClassName("box-math")[0].addEventListener("click", function (){
-    element = document.getElementsByClassName("box-math")[0]
-    element.classList.add("box-math-enlarge");
-    var rect = element.getBoundingClientRect();
-    console.log(rect.top, rect.right, rect.bottom, rect.left);
-    console.log(screen.width, screen.height);
-    element.style.position = "fixed";
-    element.style.width = "100vw";
-    element.style.height = "100vh";
-    element.style.left = "0px";
-    element.style.top = "0px";
-    element.style.margin = "0px 0px 0px 0px";
-    setTimeout(()=> {open("../../templates/interactive_math.html");},3500);
-    
-})
+//box-math
+elems = document.getElementsByClassName("int-box");
+for(let i=0;i<elems.length;i++){
+    console.log(elems[i],`${i}`)
+    elems[i].addEventListener("click", ()=>{
+        element = elems[i];
+        console.log(element,`${i}hhhhhhhhhhhhhhhhhhh`);
+        if (element.classList.contains("box-math")){
+            console.log(element,`${i}ghjghjfghfhdhd`);
+            document.querySelector(':root').style.setProperty('--math-eng','19%');
+        }else{
+            document.querySelector(':root').style.setProperty('--math-eng','54%');
+        }
+        element.classList.toggle("box-enlarge");
+        var rect = element.getBoundingClientRect();
+        console.log(rect.top, rect.right, rect.bottom, rect.left);
+        console.log(screen.width, screen.height);
+        element.style.position = "fixed";
+        element.style.width = "100vw";
+        element.style.height = "100vh";
+        element.style.left = "0px";
+        element.style.top = "0px";
+        element.style.margin = "0px 0px 0px 0px";
+        
+        setTimeout(()=>{
+            if (element.classList.contains("box-math"))
+                open("../../templates/interactive_math.html");
+            else
+                open("../../templates/interactive_eng.html");
+        },800);
+    });
+}
