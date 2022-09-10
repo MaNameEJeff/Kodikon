@@ -36,7 +36,7 @@ function NextQuestion(index) {
     document.getElementById("option-two-label").innerHTML = currentQuestion.optionB;
     document.getElementById("option-three-label").innerHTML = currentQuestion.optionC;
     document.getElementById("option-four-label").innerHTML = currentQuestion.optionD;
-    document.getElementsByClassName("anim")[0].innerHTML = `<img src=\"${currentQuestion.image}\">`;
+    document.getElementsByClassName("anim")[0].innerHTML = `<img src=\"${currentQuestion.image}\" width=400>`;
 
 }
 
@@ -62,7 +62,7 @@ function checkForAnswer() {
     //checking if checked radio button is same as answer
     options.forEach((option) => {
         if (option.checked === true && option.value === currentQuestionAnswer) {
-            document.getElementById(correctOption).style.backgroundColor = "green"
+            document.getElementById(correctOption).style.background = "linear-gradient(90deg, #00ba47, #59c000)";
             playerScore++
             indexNumber++
             //set to delay question number till when next question loads
@@ -73,8 +73,8 @@ function checkForAnswer() {
 
         else if (option.checked && option.value !== currentQuestionAnswer) {
             const wrongLabelId = option.labels[0].id
-            document.getElementById(wrongLabelId).style.backgroundColor = "red"
-            document.getElementById(correctOption).style.backgroundColor = "green"
+            document.getElementById(wrongLabelId).style.background = "linear-gradient(90deg, #ff0000, #de2b2e)";
+            document.getElementById(correctOption).style.background = "linear-gradient(90deg, #00ba47, #59c000)";
             wrongAttempt++
             indexNumber++
             //set to delay question number till when next question loads
@@ -107,7 +107,7 @@ function handleNextQuestion() {
 function resetOptionBackground() {
     const options = document.getElementsByName("option");
     options.forEach((option) => {
-        document.getElementById(option.labels[0].id).style.backgroundColor = ""
+        document.getElementById(option.labels[0].id).style.background = ""
     })
 }
 

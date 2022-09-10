@@ -187,6 +187,10 @@ main{
     height: 100%;
     /* background-color: lightpink; */
     border-radius: 30px;
+    justify-items: center;
+    padding-left: 18%;
+    padding-right: 17%;
+    padding-top: 6%
 }
 
 .game-question-container{
