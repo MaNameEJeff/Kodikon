@@ -7902,24 +7902,9 @@ textarea.form-control-lg {
   scale: 110%;
 }
  
-.container1-standard{
-  position: relative;
-  left: 15.78%;
-  height: 13%;
-  top: 10%;
-  width: 75%;
-  /* background: red; */
-}
 
-.container2-standard {
-  position: relative;
-  left: 15.78%;
-  height: 13%;
-  top: 10%;
-  width: 75%;
-  /* background: blue; */
-}
 
+<<<<<<< Updated upstream
 .container1-standard .box-std , .container2-standard .box-std {
   position: relative;
   width: 13%;
@@ -7933,14 +7918,9 @@ textarea.form-control-lg {
   margin: 10px auto;
   margin-left: 80px;
 }
+=======
+>>>>>>> Stashed changes
 
-.triangle{
-  position: relative;
-  border-bottom: 20px solid greenyellow;
-  border-right: 10px solid transparent;
-  border-left: 10px solid transparent;
-  opacity: 1;
-}
 
 
 
