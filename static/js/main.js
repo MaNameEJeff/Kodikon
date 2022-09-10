@@ -16,7 +16,7 @@
                 check=false;
             }
         }
-        if(check) open("index.html"); // VK
+        if(check) location.href = "reach"; // VK
         return check;
     });
 
