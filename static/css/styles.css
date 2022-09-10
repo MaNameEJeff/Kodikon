@@ -7902,11 +7902,19 @@ textarea.form-control-lg {
 }
 
 @keyframes boxEnlarge {
-  from {
+  0% {
     background-color: red;
+    width: 31.64%;
+    height: 38%;
+    margin-left: 19%;
+    margin-top: 8%;
   }
-  to{
+  100%{
     background-color: blue;
+    width: 100%;
+    height: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
   }
 }
 
@@ -7914,6 +7922,9 @@ textarea.form-control-lg {
   z-index: 100;
   animation-name: boxEnlarge;
   animation-duration: 4s;
+  width: 100%;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
 }
 
 .container-interactive .box-eng {

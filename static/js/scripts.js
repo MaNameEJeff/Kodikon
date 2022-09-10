@@ -35,4 +35,12 @@ document.getElementsByClassName("box-math")[0].addEventListener("click", functio
     var rect = element.getBoundingClientRect();
     console.log(rect.top, rect.right, rect.bottom, rect.left);
     console.log(screen.width, screen.height);
+    element.style.position = "fixed";
+    element.style.width = "100vw";
+    element.style.height = "100vh";
+    element.style.left = "0px";
+    element.style.top = "0px";
+    element.style.margin = "0px 0px 0px 0px";
+    setTimeout(()=> {open("../../templates/interactive_math.html");},3500);
+    
 })
