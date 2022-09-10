@@ -43,7 +43,7 @@ for(let i=0;i<elems.length;i++){
         }else{
             document.querySelector(':root').style.setProperty('--math-eng','54%');
         }
-        element.classList.toggle("box-enlarge");
+        element.classList.add("box-enlarge");
         var rect = element.getBoundingClientRect();
         console.log(rect.top, rect.right, rect.bottom, rect.left);
         console.log(screen.width, screen.height);
