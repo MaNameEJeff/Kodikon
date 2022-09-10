@@ -1,14 +1,12 @@
 var questions = []
+
 async function fooo(){
     var questions_json;
     await fetch('../static/js/questions.json').then((response) => response.json()).then((json) => {questions_json = json;});
-    setTimeout(() => {
         for(const i in questions_json) questions.push(questions_json[i]);
         console.log(questions);
-    },5000);
+    NextQuestion(0)
 }
-
-fooo();
 
 var total_qs = 4;
 let shuffledQuestions = [] //empty array to hold shuffled selected questions
