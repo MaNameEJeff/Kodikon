@@ -1,53 +1,14 @@
-const questions = [
-    {
-        question: "How many circles do you see",
-        optionA: "3",
-        optionB: "2",
-        optionC: "5",
-        optionD: "9",
-        correctOption: "optionA"
-    },
-    {
-        question: "Which shape in the animation is coloured in green",
-        optionA: "circle",
-        optionB: "square",
-        optionC: "triangle",
-        optionD: "rectangle",
-        correctOption: "optionC"
-    },
-    {
-        question: "Which is the smallest animal from the picture",
-        optionA: "Elephant",
-        optionB: "Mouse",
-        optionC: "Rabbit",
-        optionD: "Horse",
-        correctOption: "optionB"
-    },
-    {
-        question: "Which is the biggest fruit in the picture",
-        optionA: "Watermelon",
-        optionB: "Mango",
-        optionC: "Apple",
-        optionD: "Banana",
-        correctOption: "optionA"
-    },
-    {
-        question: "Select the square from the group",
-        optionA: "1",
-        optionB: "2",
-        optionC: "3",
-        optionD: "4",
-        correctOption: "optionB"
-    },
-]
+var questions = []
+async function fooo(){
+    var questions_json;
+    await fetch('../static/js/questions.json').then((response) => response.json()).then((json) => {questions_json = json;});
+    setTimeout(() => {
+        for(const i in questions_json) questions.push(questions_json[i]);
+        console.log(questions);
+    },5000);
+}
 
-// var questions_json;
-// fetch('../static/js/questions.json').then((response) => response.json()).then((json) => {questions_json = json;});
-// var questions = []
-// setTimeout(() => {
-//     for(const i in questions_json) questions.push(questions_json[i]);
-//     console.log(questions);
-// },5000);
+fooo();
 
 var total_qs = 4;
 let shuffledQuestions = [] //empty array to hold shuffled selected questions
