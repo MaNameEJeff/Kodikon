@@ -7,6 +7,8 @@
 // Scripts
 // 
 
+
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Toggle the side navigation
@@ -60,3 +62,5 @@ for(let i=0;i<elems.length;i++){
         },800);
     });
 }
+
+colors = ['red','green','yellowgreen','blue','lightblue',]
