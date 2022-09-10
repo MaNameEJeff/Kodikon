@@ -11,7 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --math-eng: 1;
+  --math-eng: 19%;
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -7972,7 +7972,7 @@ textarea.form-control-lg {
     height: 38%;
     /* margin-left: 19%; */
     margin-left: var(--math-eng);
-    margin-top: 8%;
+    margin-top: 30%;
   }
   100%{
     background-color: blue;
