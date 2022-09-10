@@ -7902,16 +7902,16 @@ textarea.form-control-lg {
 }
 
 .progress-main .chart1 {
-  background-color: #ebebeb;
+  background-color: transparent;
   float: left;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 1px 4px rgba(0, 0, 0, 0.4);
   margin-left: var(--math-eng);
 }
 
 .progress-main .chart2 {
-  background-color: #ebebeb;
+  background-color: transparent;
   float: right;
-  box-shadow:0px 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow:0px 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 .chartjs-render-monitor{
@@ -7919,8 +7919,14 @@ textarea.form-control-lg {
   top:20%;
 }
 
-.weekly-progress-label{
+.progress-label{
+  position: relative;
+  top: 5%;
   text-align: center;
+}
+
+#myBarChart{
+  top: 5%;
 }
 
 .container-interactive-nonav{
@@ -11639,7 +11645,7 @@ body {
   padding-top: 56px;
 }
 .sb-nav-fixed #layoutSidenav #layoutSidenav_nav .sb-sidenav .sb-sidenav-menu {
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 .sb-nav-fixed #layoutSidenav #layoutSidenav_content {
   padding-left: 225px;
