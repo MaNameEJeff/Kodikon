@@ -1,12 +1,15 @@
 from flask import Flask, render_template
+from database import database
 import json
 
-app = Flask(_name_)
+app = Flask(__name__)
 data_base = database()
+
 
 @app.route("/reach", methods=["GET"])
 def reach():
 	return render_template("index.html")
+
 
 @app.route('/math', methods=["GET", "POST"])
 def math():
@@ -19,9 +22,11 @@ def math():
 		file.write(json_object)
 	return render_template("interactive_math.html")
 
+
 @app.route("/test", methods=["GET"])
 def test():
 	return render_template("test.html")
 
-if _name_ == '_main_':
+
+if __name__ == '__main__':
 	app.run(debug=True)
