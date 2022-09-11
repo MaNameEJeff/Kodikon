@@ -7923,6 +7923,7 @@ textarea.form-control-lg {
 
 #myBarChart{
   top: 5%;
+  scale: 0.9;
 }
 
 .container-interactive-nonav{
