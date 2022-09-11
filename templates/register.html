@@ -7,7 +7,6 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Register - SB Admin</title>
-        <link rel="icon" type="image/x-icon" href="../static/images/icon.png" />
         <link href="../static/css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     </head>
@@ -21,29 +20,29 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Create Account</h3></div>
                                     <div class="card-body">
-                                        <form>
+                                        <form action="/register" method="post">
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
-                                                        <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" />
+                                                        <input class="form-control" id="inputFirstName" name="fname" type="text" placeholder="Enter your first name" />
                                                         <label for="inputFirstName">First name</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-floating">
-                                                        <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" />
+                                                        <input class="form-control" id="inputLastName" name="lname" type="text" placeholder="Enter your last name" />
                                                         <label for="inputLastName">Last name</label>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
+                                                <input class="form-control" id="inputEmail" type="email" name="email" placeholder="name@example.com" />
                                                 <label for="inputEmail">Parent Email address</label>
                                             </div>
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
-                                                        <input class="form-control" id="inputPassword" type="password" placeholder="Create a password" />
+                                                        <input class="form-control" id="inputPassword" name="pass" type="password" placeholder="Create a password" />
                                                         <label for="inputPassword">Password</label>
                                                     </div>
                                                 </div>
@@ -58,25 +57,26 @@
                                                 <div class="input-group">
                                                     
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="subject">
+                                                        <select name="grade">
                                                             <option disabled="disabled" selected="selected">Choose standard</option>
-                                                            <option>Grade 1</option>
-                                                            <option>Grade 2</option>
-                                                            <option>Grade 3</option>
-                                                            <option>Grade 4</option>
-                                                            <option>Grade 5</option>
-                                                            <option>Grade 6</option>
-                                                            <option>Grade 7</option>
-                                                            <option>Grade 8</option>
-                                                            <option>Grade 9</option>
-                                                            <option>Grade 10</option>
+                                                            <option value="G1">Grade 1</option>
+                                                            <option value="G2">Grade 2</option>
+                                                            <option value="G3">Grade 3</option>
+                                                            <option value="G4">Grade 4</option>
+                                                            <option value="G5">Grade 5</option>
+                                                            <option value="G6">Grade 6</option>
+                                                            <option value="G7">Grade 7</option>
+                                                            <option value="G8">Grade 8</option>
+                                                            <option value="G9">Grade 9</option>
+                                                            <option value="G10">Grade 10</option>
                                                         </select>
                                                         <div class="select-dropdown"></div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="mt-4 mb-0">
-                                                <div class="d-grid"><a class="btn btn-primary btn-block" href="login.html">Create Account</a></div>
+                                                <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                                                <!-- <div class="d-grid"><a class="btn btn-primary btn-block" type="submit">Create Account</a></div> -->
                                             </div>
                                         </form>
                                     </div>
