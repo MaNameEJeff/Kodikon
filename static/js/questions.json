@@ -1,47 +1,47 @@
 {
     "0": {
         "correctOption": "optionA",
-        "optionA": "3",
+        "optionA": "1",
         "optionB": "2",
-        "optionC": "5",
-        "optionD": "9",
-        "question": "Ravi has 2 balloons, Raj gives Ravi 1 more balloons, how many balloons does Ravi have now",
-        "image": "https://firebasestorage.googleapis.com/v0/b/kodikon-cad93.appspot.com/o/Class1%2FMath%2FChapter3%2F0.gif?alt=media&token=asdasdasd"
+        "optionC": "3",
+        "optionD": "4",
+        "question": "Ravi has 2 balloons, Rohan takes away 1 of them, how many balloons does Ravi have now",
+        "image": "https://firebasestorage.googleapis.com/v0/b/kodikon-cad93.appspot.com/o/Class2%2FMath%2FChapter3%2F0.gif?alt=media&token=asdasdasd"
     },
     "1": {
         "correctOption": "optionB",
-        "optionA": "7",
-        "optionB": "4",
-        "optionC": "5",
-        "optionD": "3",
-        "question": "Ravi has 3 balloons, Raj gives Ravi 1 more balloon, how many balloons does Ravi have now",
-        "image": "https://firebasestorage.googleapis.com/v0/b/kodikon-cad93.appspot.com/o/Class1%2FMath%2FChapter3%2F1.gif?alt=media&token=asdasdasd"
+        "optionA": "1",
+        "optionB": "2",
+        "optionC": "3",
+        "optionD": "4",
+        "question": "Ravi has 4 balloons, he gives 2 of them to Rohan , how many balloons does Ravi have now",
+        "image": "https://firebasestorage.googleapis.com/v0/b/kodikon-cad93.appspot.com/o/Class2%2FMath%2FChapter3%2F1.gif?alt=media&token=asdasdasd"
     },
     "2": {
-        "correctOption": "optionA",
-        "optionA": "6",
-        "optionB": "3",
-        "optionC": "0",
-        "optionD": "1",
-        "question": "4+2=____",
-        "image": "https://firebasestorage.googleapis.com/v0/b/kodikon-cad93.appspot.com/o/Class1%2FMath%2FChapter3%2F2.gif?alt=media&token=asdasdasd"
+        "correctOption": "optionB",
+        "optionA": "1",
+        "optionB": "2",
+        "optionC": "3",
+        "optionD": "4",
+        "question": "3-1=___",
+        "image": "https://firebasestorage.googleapis.com/v0/b/kodikon-cad93.appspot.com/o/Class2%2FMath%2FChapter3%2F2.gif?alt=media&token=asdasdasd"
     },
     "3": {
-        "correctOption": "optionC",
-        "optionA": "6",
+        "correctOption": "optionD",
+        "optionA": "5",
         "optionB": "7",
-        "optionC": "2",
+        "optionC": "10",
         "optionD": "3",
-        "question": "1+1=___",
-        "image": "https://firebasestorage.googleapis.com/v0/b/kodikon-cad93.appspot.com/o/Class1%2FMath%2FChapter3%2F3.gif?alt=media&token=asdasdasd"
+        "question": "4-1=___",
+        "image": "https://firebasestorage.googleapis.com/v0/b/kodikon-cad93.appspot.com/o/Class2%2FMath%2FChapter3%2F3.gif?alt=media&token=asdasdasd"
     },
     "4": {
-        "correctOption": "optionB",
-        "optionA": "2",
-        "optionB": "4",
-        "optionC": "8",
-        "optionD": "3",
-        "question": "2+2=___",
-        "image": "https://firebasestorage.googleapis.com/v0/b/kodikon-cad93.appspot.com/o/Class1%2FMath%2FChapter3%2F4.gif?alt=media&token=asdasdasd"
+        "correctOption": "optionA",
+        "optionA": "1",
+        "optionB": "2",
+        "optionC": "3",
+        "optionD": "4",
+        "question": "Titu frog jumps over two numbers and reaches the third number. Where will Titu go next? Make a ring on the other numbers.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/kodikon-cad93.appspot.com/o/Class2%2FMath%2FChapter3%2F4.gif?alt=media&token=asdasdasd"
     }
 }

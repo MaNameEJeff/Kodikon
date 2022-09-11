@@ -30,7 +30,7 @@
             }
         </style>
     </head>
-    <body class="sb-nav-fixed gradient-color">
+    <body class="sb-nav-fixed gradient-color" onload="setUserName()">
         <nav class="sb-topnav navbar navbar-expand navbar-dark top-color" >
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars" ></i></button>
@@ -111,8 +111,8 @@
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        Admin
+                        Logged in as:
+                        <div class="small" id="userName"></div>
                     </div>
                 </nav>
             </div>

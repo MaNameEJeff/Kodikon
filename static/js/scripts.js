@@ -64,3 +64,11 @@ for(let i=0;i<elems.length;i++){
 }
 
 colors = ['red','green','yellowgreen','blue','lightblue',]
+
+async function setUserName(){
+    await fetch('../static/js/user.json')
+    .then((response) => response.json())
+    .then((json) => {
+        document.getElementById("userName").innerHTML = json.userName;
+    });
+}

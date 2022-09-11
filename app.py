@@ -10,6 +10,12 @@ data_base = database()
 def reach():
 	return render_template("index.html")
 
+def chapter(ch_no):
+	global chapter_number
+	with open("./static/js/chapter.json", "r") as file:
+		data = json.load(f)
+		chapter_number = data["ch_no"]
+
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -17,7 +23,11 @@ def login():
 		password = request.form.get("pass")
 		email = request.form.get("email")
 		try:
-			data_base.auth.sign_in_with_email_and_password(email, password)
+			global user
+			user = data_base.auth.sign_in_with_email_and_password(email, password)
+			json_object = json.dumps({"userName": dict(data_base.db.child("users").child(user["localId"]).get().val())["fname"]})
+			with open("./static/js/user.json", "w") as file:
+				file.write(json_object)
 			return render_template("index.html")
 		except:
 			return render_template("login.html")
@@ -34,6 +44,7 @@ def register():
 		grade = request.form.get("grade")
 		email = request.form.get("email")
 		try:
+			global user
 			login = data_base.auth.create_user_with_email_and_password(email, password)
 			user = data_base.auth.sign_in_with_email_and_password(email, password)
 
@@ -52,10 +63,14 @@ def register():
 
 @app.route('/math', methods=["GET", "POST"])
 def math():
-	data = data_base.db.child("Class1").child("Math").child("Chapter 3").get().val()
+	global chapter_number
+	global user
+	chapter_number = 3
+	user_grade = dict(data_base.db.child("users").child(user["localId"]).get().val())["grade"][1]
+	data = data_base.db.child(f"Class{user_grade}").child("Math").child(f"Chapter {chapter_number}").get().val()
 	data_dict = {}
 	for d in data:
-		gif_url = data_base.storage.child("Class1").child("Math").child(f"Chapter3/{data.index(d)}.gif").get_url("asdasdasd")
+		gif_url = data_base.storage.child(f"Class{user_grade}").child("Math").child(f"Chapter{chapter_number}/{data.index(d)}.gif").get_url("asdasdasd")
 		d["image"] = gif_url
 		data_dict[data.index(d)] = d
 
