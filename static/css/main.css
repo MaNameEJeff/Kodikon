@@ -173,30 +173,28 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px;
-  background: #9053c7;
-  background: radial-gradient(#b94848, #0073ff, #a6cff3);
-  /* background: -o-linear-gradient(-135deg, #c850c0, #4158d0); */
-  /* background: -moz-linear-gradient(-135deg, #c850c0, #4158d0); */
-  /* background: linear-gradient(-135deg, #44cb18, #df3939); */
+  background: linear-gradient(90deg, #ffe866, #88fc30);
+  height: 100vh;
 }
 
 
 
 .wrap-login100 {
-  width: 960px;
-  background: rgb(255, 254, 254);
   border-radius: 10px;
   overflow: hidden;
-
+  border-color: #57b846;
+  /* border-width: ; */
+  top: 60%;
+  width: 45%;
+  background: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 177px 130px 33px 95px;
+  justify-content: center;
+  padding: 5% 5% 5% 5%;
 }
 
 /*------------------------------------------------------------------
