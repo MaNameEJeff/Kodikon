@@ -9,7 +9,7 @@ var myLineChart = new Chart(ctx, {
   data: {
     labels: ["0-2", "2-4", "4-6", "6-8", "8-10"],
     datasets: [{
-      label: "Revenue",
+      label: "No. of students with this score",
       backgroundColor: "rgba(2,117,216,1)",
       borderColor: "rgba(2,117,216,1)",
       data: [168, 210, 419, 420, 900],
