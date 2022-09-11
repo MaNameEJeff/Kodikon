@@ -36,7 +36,7 @@ for(let i=0;i<elems.length;i++){
     console.log(elems[i],`${i}`)
     elems[i].addEventListener("click", ()=>{
         element = elems[i];
-        console.log(element,`${i}hhhhhhhhhhhhhhhhhhh`);
+        // console.log(element,`${i}hhhhhhhhhhhhhhhhhhh`);
         if (element.classList.contains("box-math")){
             console.log(element,`${i}ghjghjfghfhdhd`);
             document.querySelector(':root').style.setProperty('--math-eng','19%');
