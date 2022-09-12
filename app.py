@@ -8,13 +8,21 @@ data_base = database()
 
 @app.route("/reach", methods=["POST", "GET"])
 def reach():
+	if request.method == "POST":
+		print()
+		password = request.form.get("pass")
+		email = request.form.get("email")
+		try:
+			global user
+			user = data_base.auth.sign_in_with_email_and_password(email, password)
+			json_object = json.dumps(
+				{"userName": dict(data_base.db.child("users").child(user["localId"]).get().val())["fname"]})
+			with open("./static/js/user.json", "w") as file:
+				file.write(json_object)
+			return render_template("index.html")
+		except:
+			return render_template("login.html")
 	return render_template("index.html")
-
-def chapter(ch_no):
-	global chapter_number
-	with open("./static/js/chapter.json", "r") as file:
-		data = json.load(f)
-		chapter_number = data["ch_no"]
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -55,6 +63,10 @@ def register():
 			person["grade"] = grade
 
 			data_base.db.child('users').child(user["localId"]).update(person)
+			json_object = json.dumps(
+				{"userName": dict(data_base.db.child("users").child(user["localId"]).get().val())["fname"]})
+			with open("./static/js/user.json", "w") as file:
+				file.write(json_object)
 			return render_template("index.html")
 		except:
 			return render_template("login.html")
@@ -80,7 +92,7 @@ def math():
 	return render_template("interactive_math.html")
 
 
-@app.route("/test", methods=["GET"])
+@app.route("/test", methods=["GET","POST"])
 def test():
 	return render_template("test.html")
 

@@ -64,11 +64,53 @@ for(let i=0;i<elems.length;i++){
 }
 
 colors = ['red','green','yellowgreen','blue','lightblue',]
-
 async function setUserName(){
-    await fetch('../static/js/user.json')
+    await fetch('../static/js/user.json',[method=POST])
     .then((response) => response.json())
     .then((json) => {
         document.getElementById("userName").innerHTML = json.userName;
     });
+}
+
+function chapter(index){
+    // const data_to_send = JSON.stringify({"chapter": index});
+    
+    // fetch(',',{
+    //     credentials: "same-origin",
+    //     mode: "same-origin",
+    //     method: "post",
+    //     headders: {"Content-Type":"application/json"},
+    //     body: data_to_send
+    // })
+    // Sending and receiving data in JSON format using POST method
+    //
+
+    // var xhr = new XMLHttpRequest();
+    // var url = "reach";
+    // xhr.open("POST", url, true);
+    // xhr.setRequestHeader("Content-Type", "application/json");
+    // xhr.onreadystatechange = function () {
+    //     if (xhr.readyState === 4 && xhr.status === 200) {
+    //         var json = JSON.parse(xhr.responseText);
+    //         console.log(json.email + ", " + json.password);
+    //     }
+    // };
+    // var data = JSON.stringify({"chapter": index});
+    // xhr.send(data);
+    // file = new FileSystem
+    
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "reach");
+
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+    xhr.onload = () => console.log(xhr.responseText);
+
+    let data = `{
+    "Customer": "Jason Sweet",
+    }`;
+
+    xhr.send(data);
+    console.log(data);
 }
